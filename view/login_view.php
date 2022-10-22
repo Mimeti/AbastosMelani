@@ -44,7 +44,7 @@
         <label for="name_user" class="placeholder">Nombre de usuario</label>
       </div>
       <div class="input-container ic2">
-        <input id="cont_user" class="input" type="text" name="cont_user"  placeholder=" " />
+        <input id="cont_user" class="input" type="password" name="cont_user"  placeholder=" " />
         <div class="cut"></div>
         <label for="cont_user" class="placeholder">Contraseña</label>
       </div>

@@ -38,36 +38,36 @@
         </nav>
     </header>
 
-    <form action="controlador/updatenom.php" method="POST" id="form">
+    <form action="controlador/updateadd.php" method="POST" id="form">
         <div class="form">
             <h1>Registro</h1>
-            <input type="hidden" name="ID_nom" value="<?php echo $row['ID_nom']?>">
+            <input type="hidden" name="ID_nom" value="<?php echo $row[0]?>">
             <div class="grupo">
-                <input type="text" name="name_nom" id="name_nom" value="<?php echo $row['name_nom']?>" required><span class="barra"></span>
+                <input type="text" name="name_nom" id="name_nom" value="<?php echo $row[1]?>" required><span class="barra"></span>
                 <label for="name_nom">Primer nombre</label>
             </div>
             <div class="grupo">
-                <input type="text" name="nameii_nom" id="nameii_nom" value="<?php echo $row['nameii_nom']?>" required><span class="barra"></span>
+                <input type="text" name="nameii_nom" id="nameii_nom" value="<?php echo $row[2]?>" required><span class="barra"></span>
                 <label for="nameii_nom">Segundo nombre</label>
             </div>
             <div class="grupo">
-                <input type="text" name="ape_nom" id="ape_nom" value="<?php echo $row['ape_nom']?>" required><span class="barra"></span>
+                <input type="text" name="ape_nom" id="ape_nom" value="<?php echo $row[3]?>" required><span class="barra"></span>
                 <label for="ape_nom">Primer apellido</label>
             </div>
             <div class="grupo">
-                <input type="text" name="apeii_nom" id="apeii_nom" value="<?php echo $row['apeii_nom']?>" required><span class="barra"></span>
+                <input type="text" name="apeii_nom" id="apeii_nom" value="<?php echo $row[4]?>" required><span class="barra"></span>
                 <label for="apeii_nom">Segundo apellido</label>
             </div>
             <div class="grupo">
-                <input type="int" name="ci_nom" id="ci_nom" value="<?php echo $row['ci_nom']?>" required><span class="barra"></span>
+                <input type="int" name="ci_nom" id="ci_nom" value="<?php echo $row[5]?>" required><span class="barra"></span>
                 <label for="ci_nom">Cedula de identidad</label>
             </div>
             <div class="grupo">
-                <input type="int" name="num_nom" id="num_nom" value="<?php echo $row['num_nom']?>"  required><span class="barra"></span>
+                <input type="int" name="num_nom" id="num_nom" value="<?php echo $row[6]?>"  required><span class="barra"></span>
                 <label for="num_nom">Numero de telefono</label>
             </div>
             <div class="grupo">
-                <input type="date" name="ingre_nom" id="ingre_nom" value="<?php echo $row['ingre_nom']?>" required><span class="barra"></span>
+                <input type="date" name="ingre_nom" id="ingre_nom" value="<?php echo $row[7]?>" required><span class="barra"></span>
                 <label for="ingre_nom">Fecha de ingreso</label>
             </div>
              <div class="grupo">
@@ -75,10 +75,7 @@
                 <select class="barra" name="ID_pues" id="ID_pues">   
                     <?php 
                  
-                 $gettrabajo1 = "SELECT * FROM puesto_trabajo ORDER BY ID_pues";
-                 $gettrabajo2 = mysqli_query($coon,$gettrabajo1);
-
-                 while($row = mysqli_fetch_array($gettrabajo2)){
+                 while($row = mysqli_fetch_array($datos)){
 
                             $ID_pues = $row['ID_pues'];
                             $puesto = $row['name_pues'];
@@ -92,8 +89,7 @@
                 </select>
                 <span class="barra"></span>  
             </div>
-         
-
+                    
             <button type="submit">Ingresar</button>
         </div>
     </form>
