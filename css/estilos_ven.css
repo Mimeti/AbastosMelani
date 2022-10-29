@@ -1,0 +1,131 @@
+.conten_info{
+    width: 50%;
+    display: flex;
+    background: #bbbbff;
+    padding: 10px;
+    margin: 5px auto;
+    border-radius: 5px;
+}
+
+.codi{
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    color: #ffffff;
+    margin: 0 10px;
+}
+
+.ID{
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    color: #ffffff;
+    margin: 0 10px;
+}
+
+.eliminar{
+    margin: auto;
+    padding: 5px;
+    background: #fc4b4b;
+    border-radius: 5px;
+}
+
+.eliminar:hover{
+    background: #db4444;
+}
+
+.conten_clie{
+    background: #bbbbff;
+    margin: 15px 0;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 5px;
+}
+
+.button{
+    display: flex;
+    flex-flow: row;
+    margin: auto;
+    background: #6060ff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.anular{
+    margin: 0 10px;
+    padding: 5px;
+    background: #fc4b4b;
+    border-radius: 5px;
+}
+
+.anular:hover{
+    background: #db4444;
+}
+
+.procesar{
+    padding: 5px;
+    background: #51e66a;
+    border-radius: 5px;
+}
+
+.procesar:hover{
+    background: #43c058;
+}
+
+input, select, button{
+    border: 0;
+    width: 100%;
+    border-radius: 3px;
+    padding: 3px 0;
+    outline: 0;
+}
+
+.con_for{
+    width: 50%;
+    color: #ffffff;
+    background: #6060ff;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.for{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.titu{
+    text-align: center;
+    width: 100%;
+}
+
+.div1{
+    margin: 0 15px;
+}
+
+.div2{
+    margin: 0 15px;
+}
+
+.input{
+    margin: 10px 0;
+}
+
+.boton{
+    margin: 30px 0;
+}
+
+.boton input{
+    color: #ffffff;
+    background: #bbbbff;
+}
+
+.boton input:hover{
+    background: #7777a3;
+}
+
+.titu_1{
+    text-align: center;
+    font-family: cursive;
+}

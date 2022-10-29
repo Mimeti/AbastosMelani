@@ -24,7 +24,7 @@ class PDF extends FPDF
         $this->SetFillColor(65, 105, 225);
         $this->Cell(100,10, 'Firmas',1,1,'C',1);
         $this->SetFillColor(105, 150, 225);
-        $this->Cell(100,10, 'Nombre: aldjadlajlaajdjad telefono: 04147279363',1,0,'C',1);
+        $this->Cell(100,10, 'Nombre: Marleny Velandia telefono: 04147279363',1,0,'C',1);
         $this->Cell(80,10, '  ',0,0,'C');
         $this->Cell(100,10, 'Administrador:_________ Empleado:________ ',1,0,'C',1);
         $this->Ln(20);

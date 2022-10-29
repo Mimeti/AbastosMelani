@@ -27,7 +27,7 @@ class registro{
         $query1= mysqli_query($this->con,$sql1);
 
         if($query1 == 1){
-            Header("Location: ../index_admin.php");
+            Header("Location: ../user.php");
         }else {
             die(mysqli_error($this->con));
         }

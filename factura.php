@@ -16,9 +16,12 @@ $resulta -> view();
 
 ?>
 
-<div><a href="pdf_coin.php">imprimir ventas</a></div>
-<div><a href="pdf_coin.php">imprimir monedas</a></div>
-<div><a href="pdf_coin.php">imprimir clientes</a></div>
+<div class="sepa">
+    <div><a class="ass link" href="pdf_ven.php">imprimir ventas</a></div>
+    <div><a class="ass link" href="pdf_coin.php">imprimir monedas</a></div>
+    <div><a class="ass link" href="pdf_clie.php">imprimir clientes</a></div>
+</div>
+
 
 <?php include('shared/footer.php');?>
 

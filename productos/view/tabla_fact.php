@@ -7,7 +7,7 @@
                 <th>codigo</th>
                 <th>cliente</th>
                 <th>total</th>
-                <th>estado</th>
+                <th>imprimir</th>
             </tr>
         </thead>
         <tbody>
@@ -23,7 +23,7 @@
             <td><?php  echo $row['codi_fact']?></td>
             <td><?php  echo $row['cedu_clie']?></td>
             <td><?php  echo $row['tota_fact']?></td>
-            <td><?php  echo $row['esta_fact']?></td>
+            <td><a class="form-control btn ass" href="pdf_fact.php?id=<?php echo $row['ID_fact'] ?>">inmprimir</a></td>
         </tr>
                 
         <?php

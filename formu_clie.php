@@ -16,23 +16,14 @@
             <div href="" class="nav_titulo">AbastosMelani</div>
             <ul class="nav_menu">
                 <li class="nav_menu_item">
-                    <a href="add_job.php" class="nav_menu_link nav_link">Añadir empleo</a>
-                </li>
-                <li class="nav_menu_item">
-                    <a href="nomina.php" class="nav_menu_link nav_link">volver</a>
+                    <a href="clientes.php" class="nav_menu_link nav_link">Volver</a>
                 </li>
                 
             </ul>
             <button type="buttom" class="nav_buttom" id="nav_buttom"><a href="#" class="nav_link"><span class="icon icon-menu"></span></a></button>
             <ul id="nav_ul" class="nav_respon activado">
                 <li class="nav_respon_item1">
-                    <a href="" class="nav_respon_link nav_link"><span class="icon icon-home"> inicio</span></a>
-                </li>
-                <li class="nav_respon_item">
-                    <a href="" class="nav_respon_link nav_link"><span class="icon icon-folder-open"> inventario</span></a>
-                </li>
-                <li class="nav_respon_item1">
-                    <a href="" class="nav_respon_link nav_link"><span class="icon icon-cog"> bitacora</span></a>
+                    <a href="clientes.php" class="nav_respon_link nav_link"><span class="icon icon-cog"> Volver</span></a>
                 </li>
             </ul>
         </nav>
@@ -42,11 +33,11 @@
         <div class="form">
             <h1>Ingresar Producto</h1>
             <div class="grupo">
-                <input type="text" name="name_clie" id="name_clie" required><span class="barra"></span>
+                <input type="text" name="name_clie" id="name_clie" pattern="[a-zA-ZñÑ]{3,20}" required><span class="barra"></span>
                 <label for="name_clie">Nombre del cliente</label>
             </div>
             <div class="grupo">
-                <input type="text" name="apel_clie" id="apel_clie" required><span class="barra"></span>
+                <input type="text" name="apel_clie" id="apel_clie" pattern="[a-zA-ZñÑ]{3,20}" required><span class="barra"></span>
                 <label for="apel_clie">Apellido del cliente</label>
             </div>
             <div class="grupo">

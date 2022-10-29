@@ -16,23 +16,14 @@
             <div href="" class="nav_titulo">AbastosMelani</div>
             <ul class="nav_menu">
                 <li class="nav_menu_item">
-                    <a href="add_job.php" class="nav_menu_link nav_link">Añadir empleo</a>
-                </li>
-                <li class="nav_menu_item">
-                    <a href="nomina.php" class="nav_menu_link nav_link">volver</a>
+                    <a href="inventario.php" class="nav_menu_link nav_link">Volver</a>
                 </li>
                 
             </ul>
             <button type="buttom" class="nav_buttom" id="nav_buttom"><a href="#" class="nav_link"><span class="icon icon-menu"></span></a></button>
             <ul id="nav_ul" class="nav_respon activado">
-                <li class="nav_respon_item1">
-                    <a href="" class="nav_respon_link nav_link"><span class="icon icon-home"> inicio</span></a>
-                </li>
                 <li class="nav_respon_item">
-                    <a href="" class="nav_respon_link nav_link"><span class="icon icon-folder-open"> inventario</span></a>
-                </li>
-                <li class="nav_respon_item1">
-                    <a href="" class="nav_respon_link nav_link"><span class="icon icon-cog"> bitacora</span></a>
+                    <a href="inventario.php" class="nav_respon_link nav_link"><span class="icon icon-folder-open"> Volver</span></a>
                 </li>
             </ul>
         </nav>
@@ -42,11 +33,11 @@
         <div class="form">
             <h1>Ingresar Producto</h1>
             <div class="grupo">
-                <input type="text" name="name_inve" id="name_inve" required><span class="barra"></span>
+                <input type="text" name="name_inve" id="name_inve" pattern="[a-zA-ZñÑ]{3,20}" required><span class="barra"></span>
                 <label for="name_inve">Nombre del producto</label>
             </div>
             <div class="grupo">
-                <input type="text" name="mark_inve" id="mark_inve" required><span class="barra"></span>
+                <input type="text" name="mark_inve" id="mark_inve" pattern="[a-zA-ZñÑ]{3,20}" required><span class="barra"></span>
                 <label for="mark_inve">Marca</label>
             </div>
             <div class="grupo">

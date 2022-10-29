@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos_menu.css">
     <link rel="stylesheet" href="css/estilo_tablas.css">
+    <link rel="stylesheet" href="css/botone.css">
     <link rel="stylesheet" href="css/icon.css">
-    
+
     <title>Abastos Melani</title>
 </head>
 <body>
@@ -20,7 +21,7 @@
                     <a href="add_nom.php" class="nav_menu_link nav_link">Añadir nomina</a>
                 </li>
                 <li class="nav_menu_item">
-                    <a href="add_job.php" class="nav_menu_link nav_link">Añadir empleo</a>
+                    <a href="puesto.php" class="nav_menu_link nav_link">Añadir empleo</a>
                 </li>
                 <li class="nav_menu_item">
                     <a href="index_admin.php" class="nav_menu_link nav_link">volver</a>
@@ -30,13 +31,13 @@
             <button type="buttom" class="nav_buttom" id="nav_buttom"><a href="#" class="nav_link"><span class="icon icon-menu"></span></a></button>
             <ul id="nav_ul" class="nav_respon activado">
                 <li class="nav_respon_item1">
-                    <a href="" class="nav_respon_link nav_link"><span class="icon icon-home"> inicio</span></a>
+                    <a href="add_nom" class="nav_respon_link nav_link"><span class="icon icon-folder-open"> Añadir nomina</span></a>
                 </li>
                 <li class="nav_respon_item">
-                    <a href="" class="nav_respon_link nav_link"><span class="icon icon-folder-open"> inventario</span></a>
+                    <a href="puesto.php" class="nav_respon_link nav_link"><span class="icon icon-folder-open"> Añadir empleo</span></a>
                 </li>
                 <li class="nav_respon_item1">
-                    <a href="" class="nav_respon_link nav_link"><span class="icon icon-cog"> bitacora</span></a>
+                    <a href="index_admin.php" class="nav_respon_link nav_link"><span class="icon icon-home"> Volver</span></a>
                 </li>
             </ul>
         </nav>
@@ -60,6 +61,7 @@
                     <th>Sueldo</th>
                     <th>Editar</th>
                     <th>Eliminar</th>
+                    <th>Calcular</th>
                 </tr>
             </thead>
     <tbody>
@@ -81,8 +83,9 @@
                 <td><?php  echo $row['ingre_nom']?></td>
                 <td><?php  echo $row['name_pues']?></td>
                 <td><?php  echo $row['suel_pues']?></td>
-                <td><a class="form-control btn submit" href="updatenom.php?id=<?php echo $row['ID_nom'] ?>" >Editar</a></td>
-                <td><a class="form-control btn submit" href="delete_nom.php?id=<?php echo $row['ID_nom'] ?>" >Eliminar</a></td>
+                <td><a class="edit" href="updatenom.php?id=<?php echo $row['ID_nom'] ?>" >Editar</a></td>
+                <td><a class="delete" href="delete_nom.php?id=<?php echo $row['ID_nom'] ?>" >Eliminar</a></td>
+                <td><a class="ass" href="controlador/calcu.php?id=<?php echo $row['ID_nom'] ?>" >Calcular</a></td>
             </tr>
                     
             <?php
@@ -90,5 +93,9 @@
             }
             ?>
     </tbody>
-</table>     
+</table>
+
 </div>
+<br>
+<center><a class="ass" href="pdfnom.php">Imprimir reporte</a></center>
+<br>

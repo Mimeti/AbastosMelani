@@ -1,9 +1,11 @@
-<?php include ('productos/clases.php');
+<?php 
 
-include('shared/head.php');
+include ('clases/inventario.php');
+
 
 $resulta = new Inventario();
-$resulta -> view();?>
+$resulta -> viewe();
 
 
-<?php include('shared/footer.php');?>
+
+?>

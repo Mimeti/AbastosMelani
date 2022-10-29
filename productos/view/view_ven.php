@@ -1,21 +1,21 @@
 
 
 <div>
-    <div type="button">
-        <div>
+    <div class="conten_info" type="button">
+        <div class="codi">
             <p>ingresar codigo</p>
-            <input type="text" name="codi_fact" id="codi_fact" value="">
+            <input type="text" name="codi_fact" id="codi_fact" value=""  placeholder="codigo de la factuara">
         </div>
-        <div>
+        <div class="ID">
             <p>ingresar ID de venta</p>
-            <input type="text" name="ID_teve" id="ID_teve" value="">
+            <input type="text" name="ID_teve" id="ID_teve" value=""  placeholder="ID para eliminar">
         </div>
-        <div>
-            <div><a id="eliminar" href="#"><span class="icon icon-bin"></span>eliminar</a></div>
+        <div class="eliminar">
+            <div><a class="link" id="eliminar" href="#"><span class="icon icon-bin"></span>eliminar</a></div>
         </div>
     </div>
     
-    <div type="button">
+    <div class="conten_clie" type="button">
         <div>
         <table>
                 <thead>
@@ -28,23 +28,25 @@
                 </thead>
                 <tr>
                     <td></td>
-                    <td><input type="int" name="ID_clie" id="ID_clie"></td>
+                    <td><input type="int" name="ID_clie" id="ID_clie" placeholder="ingresa ID de cliente"></td>
                     <td id="name_clie">-</td>
                     <td id="cedu_clie">-</td>
                 </tr>
         </table>
         </div>
-        <div>
-            <div><a id="anular" href="#">anular</a></div>
-        </div>
-        <div>
-            <div><a id="procesar" href="#">procesar</a></div>
+        <div class="button">
+            <div class="anular">
+                <div><a class="link" id="anular" href="#">anular</a></div>
+            </div>
+            <div class="procesar">
+                <div><a class="link" id="procesar" href="#">procesar</a></div>
+            </div>  
         </div>
     </div>
 </div>
 
 <div>
-    <h2>nueva venta</h2>
+    <h2 class="titu_1">nueva venta</h2>
         <table class="table">
             <thead class="thead">
                 <tr class="tr">
@@ -61,14 +63,14 @@
             </thead>
             <tr class="tr">
                 <td></td>
-                <td class="td"><input class="form-control form-control-sm" type="int" name="ID_inve" id="ID_inve"></td>
+                <td class="td"><input class="form-control form-control-sm" type="int" name="ID_inve" id="ID_inve" placeholder="ingrese ID de inventario"></td>
                 <td class="td" id="name_inve">-</td>
                 <td class="td" id="mark_inve">-</td>
                 <td class="td" id="alma_inve">00</td>
                 <td class="td" id="prec_inve">0.00</td>
                 <td class="td"><input class="form-control form-control-sm" type="text" name="num_ven" id="num_ven" value="0" min="1" disabled></td>
                 <td class="td" id="prec_ven">0.00</td>
-                <td class="td"><a class="agregar" href="#" id="agregar">agregar</a></td>
+                <td class="td"><a class="agregar ass" href="#" id="agregar">agregar</a></td>
             </tr>
             <thead class="thead">
                 <tr class="tr"> 

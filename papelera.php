@@ -17,7 +17,7 @@
   <a href="cliedumb.php">Cliente</a>
   <a href="invedumb.php">Inventario</a>
   <a href="userdumb.php">Usuarios</a>
-  <a href="bitacora.php">Volver</a>
+  <a href="historial_menu.php">Volver</a>
   <div class="dot"></div>
 </nav>
 

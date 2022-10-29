@@ -4,58 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/fomu.css">
     <link rel="stylesheet" href="css/estilos_menu.css">
-    <link rel="stylesheet" href="css/estilos_invea.css">
-    <link rel="stylesheet" href="css/icon.css">
+    <link rel="stylesheet" href="css/notification.css">
     <title>Abastos Melani</title>
 </head>
 <body>
-
-
-<div class="conten_form">
-    <form class="form" action="productos/ingresar_inve.php" method="post">
-        <div class="form_fondo"><span class="icon icon-folder-open"> ingresar datos</span>
-            <div class="form_div">
-                <div class="form_div-con">
-                    <label><span class="icon icon-folder-plus"> Nombre de usuario</span></label>
-                    <input type="text" name="name_user" placeholder="Ingresar nombre de usuario">
-                </div>
-                <div class="form_div-con">
-                    <label><span class="icon icon-folder-plus"> Contraseña</span></label>
-                    <input type="password" name="cont_user" placeholder="Ingresar una contraseña">
-                </div>
-            </div>
-            <div class="form_div">
-                <div class="form_div-con">
-                    <label><span class="icon icon-folder-plus"> Correo electronico</span></label>
-                    <input type="mail" name="mail_user" placeholder="Ingresar correo electronico">
-                </div>
-                <div class="form-group mx-sm-4 pt-3 pb-3 ">
-                <select class="form-control mb-3" name="ID_rol">   
-                <?php 
+<header class="content_header">
+        <nav class="content_nav">
+            <a href=""><img src="img/logo.png" alt="logo" class="nav_logo"></a>
+            <div href="" class="nav_titulo">AbastosMelani</div>
+            <ul class="nav_menu">
+                <li class="nav_menu_item">
+                    <a href="user.php" class="nav_menu_link nav_link">Volver</a>
+                </li>
                 
+            </ul>
+            <button type="buttom" class="nav_buttom" id="nav_buttom"><a href="#" class="nav_link"><span class="icon icon-menu"></span></a></button>
+            <ul id="nav_ul" class="nav_respon activado">
+                <li class="nav_respon_item1">
+                    <a href="user.php" class="nav_respon_link nav_link"><span class="icon icon-home">Volver</span></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-                    while($row = mysqli_fetch_array($datos)){
 
-                        $ID_rol = $row['ID_rol'];
-                        $rol = $row['name_rol'];
-                        
-                ?>
-                <option value="<?php echo $ID_rol; ?>"><?php echo $rol;?></option>
+<form action="controlador/ingresar_user.php" method="POST" id="form">
+        <div class="form">
+            <h1>Registro</h1>
+            <div class="grupo">
+                <input type="text" name="name_user" id="name_user" pattern="[a-zA-ZñÑ]{3,20}"  required><span class="barra"></span>
+                <label for="name_user">Nombre de usuario</label>
+            </div>
+            <div class="grupo">
+                <input type="password" name="cont_user" id="cont_user"  required><span class="barra"></span>
+                <label for="cont_user">Contraseña</label>
+            </div>
+            <div class="grupo">
+                <input type="mail" name="mail_user" id="mail_user" pattern="[a-zA-ZñÑ@._]{3,20}" required><span class="barra"></span>
+                <label for="mail_user">Correo electronico</label>
+            </div>
+             <div class="grupo">
+                <label for="ID_pues">Tipo de usuario</label>
+                <select class="barra" name="ID_rol" id="ID_rol">   
+                    <?php 
+                 
+                        while($row = mysqli_fetch_array($datos)){
+
+                            $ID_rol = $row['ID_rol'];
+                            $rol = $row['name_rol'];
+                            
+                    ?>
+                      <option value="<?php echo $ID_rol; ?>"><?php echo $rol;?></option>
                     <?php
-                         }
-                        ?>
-                    </select>    
-                </div>
+                        }
+                    ?>
+                </select>
+                <span class="barra"></span>  
             </div>
-            <div class="form_div">
-                <div class="form_div-con">
-                    <input type="submit" name="submit">
-                </div>
-                <div class="form_div-con">
-                    <a href="index_admin.php">volver</a>
-                </div>
-            </div>
+         
+
+            <button type="submit">Ingresar</button>
         </div>
     </form>
+    <script src="main.js"></script>
+
+</form>
+    </div>
 </div>

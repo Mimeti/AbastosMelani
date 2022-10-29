@@ -20,23 +20,17 @@
                     <a href="pdfbit.php" class="nav_menu_link nav_link">Imprimir</a>
                 </li>
                 <li class="nav_menu_item">
-                    <a href="papelera.php" class="nav_menu_link nav_link">Papelera</a>
-                </li>
-                <li class="nav_menu_item">
-                    <a href="index_admin.php" class="nav_menu_link nav_link">Volver</a>
+                    <a href="historial_menu.php" class="nav_menu_link nav_link">Volver</a>
                 </li>
                 
             </ul>
             <button type="buttom" class="nav_buttom" id="nav_buttom"><a href="#" class="nav_link"><span class="icon icon-menu"></span></a></button>
             <ul id="nav_ul" class="nav_respon activado">
                 <li class="nav_respon_item1">
-                    <a href="" class="nav_respon_link nav_link"><span class="icon icon-home"> Imprimir</span></a>
+                    <a href="pdfbit.php" class="nav_respon_link nav_link"><span class="icon icon-home"> Imprimir</span></a>
                 </li>
                 <li class="nav_respon_item">
-                    <a href="" class="nav_respon_link nav_link"><span class="icon icon-folder-open"> Papelera</span></a>
-                </li>
-                <li class="nav_respon_item1">
-                    <a href="" class="nav_respon_link nav_link"><span class="icon icon-cog"> Volver</span></a>
+                    <a href="historial_menu" class="nav_respon_link nav_link"><span class="icon icon-folder-open"> Volver</span></a>
                 </li>
             </ul>
         </nav>

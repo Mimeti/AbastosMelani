@@ -40,4 +40,13 @@ class registro{
         include('view/userdumb.php');
     }
 
+    public function drop(){
+        $sql = "TRUNCATE TABLE userdumb";
+        $query = mysqli_query($this->con,$sql);
+
+        if($query){
+            Header("Location: ../userdumb.php");
+        }
+    }
+
 }

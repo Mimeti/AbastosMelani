@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos_menu.css">
     <link rel="stylesheet" href="css/estilo_tablas.css">
-    <link rel="stylesheet" href="css/icon.css">
+    <link rel="stylesheet" href="css/botone.css">
     
     <title>Abastos Melani</title>
 </head>
@@ -17,36 +17,19 @@
             <div href="" class="nav_titulo">AbastosMelani</div>
             <ul class="nav_menu">
                 <li class="nav_menu_item">
-                    <a href="formu_produ.php" class="nav_menu_link nav_link">Añadir producto</a>
-                </li>
-                <li class="nav_menu_item">
-                    <a href="clientes.php" class="nav_menu_link nav_link">Clientes</a>
-                </li>
-                <li class="nav_menu_item">
-                    <a href="inve_menu.php" class="nav_menu_link nav_link">volver</a>
+                    <a href="papelera.php" class="nav_menu_link nav_link">volver</a>
                 </li>
                 
             </ul>
             <button type="buttom" class="nav_buttom" id="nav_buttom"><a href="#" class="nav_link"><span class="icon icon-menu"></span></a></button>
             <ul id="nav_ul" class="nav_respon activado">
                 <li class="nav_respon_item1">
-                    <a href="" class="nav_respon_link nav_link"><span class="icon icon-home"> inicio</span></a>
-                </li>
-                <li class="nav_respon_item">
-                    <a href="" class="nav_respon_link nav_link"><span class="icon icon-folder-open"> inventario</span></a>
-                </li>
-                <li class="nav_respon_item1">
-                    <a href="" class="nav_respon_link nav_link"><span class="icon icon-cog"> bitacora</span></a>
+                    <a href="papelera.php" class="nav_respon_link nav_link"><span class="icon icon-cog"> bitacora</span></a>
                 </li>
             </ul>
         </nav>
     </header>
-
-
-        <div><a href="pdf_inve.php">imprimir tabla</a></div>
-    </div>
-
-    
+ 
 <div class="table-wrapper">
         <table class="fl-table">
             <thead>
@@ -54,8 +37,8 @@
                     <th>ID</th>
                     <th>Nombre</th>
                     <th>Correo</th>
-                    <th>rol</th>
-                    <th>eliminar</th>
+                    <th>Rol</th>
+                    <th>Restaurar</th>
                 </tr>
             </thead>
     <tbody>
@@ -71,7 +54,7 @@
                 <td><?php  echo $row['name_ud']?></td>
                 <td><?php  echo $row['mail_ud']?></td>
                 <td><?php  echo $row['rol_ud']?></td>
-                <td><a class="form-control btn submit" href="delete_inve.php?id=<?php echo $row['ID_ud'] ?>" >Eliminar</a></td>
+                <td><a class="edit" href="restore_user.php?id=<?php echo $row['ID_ud'] ?>" >Restaurar</a></td>
             </tr>
                     
             <?php
@@ -81,4 +64,5 @@
     </tbody>
 </table>     
 </div>
-    
+
+<center><a class="delete" href="controlador/drop_userd.php">Vaciar papelera</a></center>

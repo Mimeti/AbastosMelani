@@ -42,27 +42,27 @@
         <div class="form">
             <h1>Registro</h1>
             <div class="grupo">
-                <input type="text" name="name_nom" id="name_nom" required><span class="barra"></span>
+                <input type="text" name="name_nom" id="name_nom" pattern="[a-zA-ZñÑ]{3,20}" required><span class="barra"></span>
                 <label for="name_nom">Primer nombre</label>
             </div>
             <div class="grupo">
-                <input type="text" name="nameii_nom" id="nameii_nom" required><span class="barra"></span>
+                <input type="text" name="nameii_nom" id="nameii_nom" pattern="[a-zA-ZñÑ]{3,20}" required><span class="barra"></span>
                 <label for="nameii_nom">Segundo nombre</label>
             </div>
             <div class="grupo">
-                <input type="text" name="ape_nom" id="ape_nom" required><span class="barra"></span>
+                <input type="text" name="ape_nom" id="ape_nom" pattern="[a-zA-ZñÑ]{3,20}" required><span class="barra"></span>
                 <label for="ape_nom">Primer apellido</label>
             </div>
             <div class="grupo">
-                <input type="text" name="apeii_nom" id="apeii_nom" required><span class="barra"></span>
+                <input type="text" name="apeii_nom" id="apeii_nom" pattern="[a-zA-ZñÑ]{3,20}" required><span class="barra"></span>
                 <label for="apeii_nom">Segundo apellido</label>
             </div>
             <div class="grupo">
-                <input type="int" name="ci_nom" id="ci_nom" required><span class="barra"></span>
+                <input type="int" name="ci_nom" id="ci_nom"  required><span class="barra"></span>
                 <label for="ci_nom">Cedula de identidad</label>
             </div>
             <div class="grupo">
-                <input type="int" name="num_nom" id="num_nom" required><span class="barra"></span>
+                <input type="int" name="num_nom" id="num_nom"  required><span class="barra"></span>
                 <label for="num_nom">Numero de telefono</label>
             </div>
             <div class="grupo">

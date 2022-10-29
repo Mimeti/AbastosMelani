@@ -1,6 +1,6 @@
 <?php 
 
-include ('clases/registro.php');
+include ('../clases/registro.php');
 
 
 $resulta = new registro();

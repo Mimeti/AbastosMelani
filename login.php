@@ -27,7 +27,7 @@ if(isset($_SESSION['ID_rol'])){
     }
 }
 
-if(isset($_POST['name_user']) && isset($_POST['cont_user'])){
+if(isset($_POST['name_user']) && isset($_POST['cont_user']) && $_COOKIE["token"] == $_POST["txtcaptcha"]){
     $name_user = $_POST['name_user'];
     $cont_user = $_POST['cont_user'];
     $errores = '';
@@ -38,6 +38,9 @@ if(isset($_POST['name_user']) && isset($_POST['cont_user'])){
 
     $row=mysqli_fetch_array($resultado);
     if($row == TRUE){
+        
+        session_start();
+        setcookie(session_name(), true);
 
         $ID_rol = $row[4];
 

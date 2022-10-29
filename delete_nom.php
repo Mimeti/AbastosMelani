@@ -14,5 +14,4 @@ if($resultado == 1){
     die(mysqli_error($coon));
 }
 
-
 ?>

@@ -1,5 +1,3 @@
-
-
 <style>
     body 
 {
@@ -48,6 +46,10 @@
         <div class="cut"></div>
         <label for="cont_user" class="placeholder">Contraseña</label>
       </div>
+      <div class="input-container ic2">
+      <center><img src="captcha.php"/></center></div>
+      <div class="input-container ic2">
+      <input type="text" class="input" name="txtcaptcha" placeholder="Ingresa el código"></div>
       <div class="form-group mx-sm-4  text-center pb-4">
         <?php if (!empty($errores) )  {?>
 
@@ -67,14 +69,15 @@
 
         <?php } ?>
 
-      <button type="text" class="submit">submit</button>
+      <button type="text" class="submit">Ingresar</button>
     </div>
-
+  
 
 
 
 </form>
     </div>
+</div>
 </div>
 </div>
 

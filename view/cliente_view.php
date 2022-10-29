@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos_menu.css">
     <link rel="stylesheet" href="css/estilo_tablas.css">
-    <link rel="stylesheet" href="css/icon.css">
+    <link rel="stylesheet" href="css/botone.css">
     
     <title>Abastos Melani</title>
 </head>
@@ -42,12 +42,6 @@
         </nav>
     </header>
 
-
-        <div><a href="pdf_inve.php">imprimir tabla</a></div>
-    </div>
-
-    
-  
 <div class="table-wrapper">
         <table class="fl-table">
             <thead>
@@ -73,8 +67,8 @@
                 <td><?php  echo $row['name_clie']?></td>
                 <td><?php  echo $row['apel_clie']?></td>
                 <td><?php  echo $row['cedu_clie']?></td>
-                <td><a class="form-control btn submit" href="updatenom.php?id=<?php echo $row['ID_clie'] ?>" >Editar</a></td>
-                <td><a class="form-control btn submit" href="delete_clie.php?id=<?php echo $row['ID_clie'] ?>" >Eliminar</a></td>
+                <td><a class="edit" href="updatenom.php?id=<?php echo $row['ID_clie'] ?>" >Editar</a></td>
+                <td><a class="delete" href="delete_clie.php?id=<?php echo $row['ID_clie'] ?>" >Eliminar</a></td>
             </tr>
                     
             <?php
@@ -84,4 +78,6 @@
     </tbody>
 </table>     
 </div>
-    
+<br>
+<center><a class="ass" href="pdf_clie.php">Imprimir reporte</a></center>
+<br>

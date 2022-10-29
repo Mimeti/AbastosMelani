@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos_menu.css">
     <link rel="stylesheet" href="css/estilos_invea.css">
+    <link rel="stylesheet" href="css/botone.css">
+    <link rel="stylesheet" href="css/adicion.css">
     <link rel="stylesheet" href="css/icon.css">
     <title>Abastos Melani</title>
 </head>

@@ -145,7 +145,7 @@ class facturas{
     }
 
     public function view(){
-        $sql = "SELECT * FROM facturas";
+        $sql = "SELECT * FROM facturas INNER JOIN cliente ON facturas.ID_clie = cliente.ID_clie";
         $datos = mysqli_query($this->con,$sql);
         
         include('productos/view/tabla_fact.php');

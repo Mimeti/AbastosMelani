@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos_menu.css">
     <link rel="stylesheet" href="css/estilo_tablas.css">
-    <link rel="stylesheet" href="css/icon.css">
+    <link rel="stylesheet" href="css/botone.css">
     
     <title>Abastos Melani</title>
 </head>
@@ -17,10 +17,10 @@
             <div href="" class="nav_titulo">AbastosMelani</div>
             <ul class="nav_menu">
                 <li class="nav_menu_item">
-                    <a href="formu_produ.php" class="nav_menu_link nav_link">Añadir producto</a>
+                    <a href="formu_produg.php" class="nav_menu_link nav_link">Añadir producto</a>
                 </li>
                 <li class="nav_menu_item">
-                    <a href="clientes.php" class="nav_menu_link nav_link">Clientes</a>
+                    <a href="clientesg.php" class="nav_menu_link nav_link">Clientes</a>
                 </li>
                 <li class="nav_menu_item">
                     <a href="inve_menug.php" class="nav_menu_link nav_link">volver</a>
@@ -43,8 +43,6 @@
     </header>
 
 
-        <div><a href="pdf_inve.php">imprimir tabla</a></div>
-    </div>
 
     
 <div class="table-wrapper">
@@ -83,4 +81,5 @@
     </tbody>
 </table>     
 </div>
-    
+
+<center><a href="pdf_inve.php" class="ass">Imprimir tabla</a></center>

@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos_menu.css">
     <link rel="stylesheet" href="css/estilo_tablas.css">
-    <link rel="stylesheet" href="css/pdfboton.css">
+    <link rel="stylesheet" href="css/botone.css">
+    <link rel="stylesheet" href="icon.css">
     
     <title>Abastos Melani</title>
 </head>
@@ -17,26 +18,20 @@
             <div href="" class="nav_titulo">AbastosMelani</div>
             <ul class="nav_menu">
                 <li class="nav_menu_item">
-                    <a href="formu_produ.php" class="nav_menu_link nav_link">Añadir producto</a>
+                    <a href="registro.php" class="nav_menu_link nav_link">Añadir Usuario</a>
                 </li>
                 <li class="nav_menu_item">
-                    <a href="clientes.php" class="nav_menu_link nav_link">Clientes</a>
-                </li>
-                <li class="nav_menu_item">
-                    <a href="inve_menu.php" class="nav_menu_link nav_link">volver</a>
+                    <a href="index_admin.php" class="nav_menu_link nav_link">volver</a>
                 </li>
                 
             </ul>
             <button type="buttom" class="nav_buttom" id="nav_buttom"><a href="#" class="nav_link"><span class="icon icon-menu"></span></a></button>
             <ul id="nav_ul" class="nav_respon activado">
                 <li class="nav_respon_item1">
-                    <a href="" class="nav_respon_link nav_link"><span class="icon icon-home"> inicio</span></a>
+                    <a href="registro.php" class="nav_respon_link nav_link"><span class="icon icon-home">Añadir usuario</span></a>
                 </li>
                 <li class="nav_respon_item">
-                    <a href="" class="nav_respon_link nav_link"><span class="icon icon-folder-open"> inventario</span></a>
-                </li>
-                <li class="nav_respon_item1">
-                    <a href="" class="nav_respon_link nav_link"><span class="icon icon-cog"> bitacora</span></a>
+                    <a href="index_admin.php" class="nav_respon_link nav_link"><span class="icon icon-folder-open">Volver</span></a>
                 </li>
             </ul>
         </nav>
@@ -71,7 +66,7 @@
                 <td><?php  echo $row['name_user']?></td>
                 <td><?php  echo $row['mail_user']?></td>
                 <td><?php  echo $row['name_rol']?></td>
-                <td><a class="form-control btn submit" href="delete_inve.php?id=<?php echo $row['ID_user'] ?>" >Eliminar</a></td>
+                <td><a class="delete" href="delete_user.php?id=<?php echo $row['ID_user'] ?>" >Eliminar</a></td>
             </tr>
                     
             <?php
@@ -81,6 +76,6 @@
     </tbody>
 </table>  
 
-<div><a href="pdf_inve.php" class="pdf">imprimir tabla</a></div>   
+
 </div>
-    
+<center><a href="pdf_user.php" class="ass">Imprimir tabla</a></center>

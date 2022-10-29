@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos_menu.css">
     <link rel="stylesheet" href="css/estilo_tablas.css">
-    <link rel="stylesheet" href="css/icon.css">
+    <link rel="stylesheet" href="css/botone.css">
     
     <title>Abastos Melani</title>
 </head>
@@ -30,23 +30,18 @@
             <button type="buttom" class="nav_buttom" id="nav_buttom"><a href="#" class="nav_link"><span class="icon icon-menu"></span></a></button>
             <ul id="nav_ul" class="nav_respon activado">
                 <li class="nav_respon_item1">
-                    <a href="" class="nav_respon_link nav_link"><span class="icon icon-home"> inicio</span></a>
+                    <a href="formu_produ.php" class="nav_respon_link nav_link"><span class="icon icon-home"> Añadir producto</span></a>
                 </li>
                 <li class="nav_respon_item">
-                    <a href="" class="nav_respon_link nav_link"><span class="icon icon-folder-open"> inventario</span></a>
+                    <a href="clientes.php" class="nav_respon_link nav_link"><span class="icon icon-folder-open"> Clientes</span></a>
                 </li>
                 <li class="nav_respon_item1">
-                    <a href="" class="nav_respon_link nav_link"><span class="icon icon-cog"> bitacora</span></a>
+                    <a href="inve_menu.php" class="nav_respon_link nav_link"><span class="icon icon-cog"> bitacora</span></a>
                 </li>
             </ul>
         </nav>
     </header>
 
-
-        <div><a href="pdf_inve.php">imprimir tabla</a></div>
-    </div>
-
-    
 <div class="table-wrapper">
         <table class="fl-table">
             <thead>
@@ -78,8 +73,8 @@
                 <td><?php  echo $row['cadu_inve']?></td>
                 <td><?php  echo $row['alma_inve']?></td>
                 <td><?php  echo $row['prec_inve']?></td>
-                <td><a class="form-control btn submit" href="updatenom.php?id=<?php echo $row['ID_inve'] ?>" >Editar</a></td>
-                <td><a class="form-control btn submit" href="delete_inve.php?id=<?php echo $row['ID_inve'] ?>" >Eliminar</a></td>
+                <td><a class="edit" href="updateinve.php?id=<?php echo $row['ID_inve'] ?>" >Editar</a></td>
+                <td><a class="delete" href="delete_inve.php?id=<?php echo $row['ID_inve'] ?>" >Eliminar</a></td>
             </tr>
                     
             <?php
@@ -89,4 +84,8 @@
     </tbody>
 </table>     
 </div>
+
+<br>
+<center><a class="ass" href="pdf_inve.php">Imprimir reporte</a></center>
+<br>
     

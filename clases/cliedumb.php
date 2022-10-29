@@ -37,7 +37,6 @@ class Nomina{
 
     public function view(){
         $sql = "SELECT * FROM clientedumb";
-        //$datos = $this->con->consultaRetorno($sql);
         $datos = mysqli_query($this->con,$sql);
         
 
@@ -45,13 +44,12 @@ class Nomina{
 
     }
 
-    /*public function produ(){
-        $sql = "SELECT * FROM inventario";
-        //$datos = $this->con->consultaRetorno($sql);
-        $datos = mysqli_query($this->con,$sql);
-        
+    public function drop(){
+        $sql = "TRUNCATE TABLE clientedumb";
+        $query = mysqli_query($this->con,$sql);
 
-        include('productos/view/tabla_produ.php');
-
-    }*/
+        if($query){
+            Header("Location: ../cliedumb.php");
+        }
+    }
 }
